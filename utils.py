@@ -23,9 +23,7 @@ def get_candidates_by_name(canditates, candidate_name):
 
     list_of_candidate = []
     for candidate in canditates:
-        name = candidate["name"].split(" ")
-        name = [x.lower() for x in name]
-        if candidate_name.lower() in name:
+        if candidate['name'].lower().find(candidate_name.lower()) != -1:
             list_of_candidate.append(candidate)
 
     return list_of_candidate

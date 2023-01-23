@@ -5,11 +5,11 @@
 	<title>Поиск</title>
 </head>
 <body>
-    <h2>Найдено кандидатов {{n}}</h2>
+    <h2>Найдено кандидатов {{ n }}</h2>
 	{% for item in items %}
-    <p>
-		<a href="/candidate//{{item['id']}}">{{item['name']}}</a>
-	</p>
+		<p>
+			<a href="/candidate//{ item.id }}">{{ item.name }}</a>
+		</p>
 	{% endfor %}
 </body>
 </html>
