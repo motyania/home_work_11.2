@@ -18,9 +18,6 @@ def get_candidate(canditates, candidate_id):
             return candidate
 
 
-# print(get_candidate(list_of_canditates, 2))
-
-
 def get_candidates_by_name(canditates, candidate_name):
     """возвращает кандидатов по имени"""
 
